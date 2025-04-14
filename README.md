@@ -2,7 +2,7 @@
 A fun computer vision project that creates the illusion of an invisible cloak, inspired by Harry Potter!  
 This effect is achieved using color detection and background subtraction techniques with OpenCV in Python.
 
-###The basic idea is given below:
+## The basic idea is given below:
 
 1. **Capture and store the background frame.**  
 2. **Detect the red-colored cloth using a color detection algorithm.**  
