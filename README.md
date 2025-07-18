@@ -1,11 +1,19 @@
-# Invisibility-Cloak
-A fun computer vision project that creates the illusion of an invisible cloak, inspired by Harry Potter!  
-This effect is achieved using color detection and background subtraction techniques with OpenCV in Python.
+# 🧙‍♂️ Invisibility Cloak using OpenCV
 
-## The basic idea is given below:
+Bring the magic of Harry Potter into the real world using Python and OpenCV! This project captures the background and replaces the cloak-colored area with it in real-time video, creating an invisibility effect.
 
-1. **Capture and store the background frame.**  
-2. **Detect the red-colored cloth using a color detection algorithm.**  
-3. **Segment out the red cloth by generating a mask.**  
-4. **Generate the final augmented output to create the magical effect.**
+---
+## 🛠 Tech Stack
 
+- **Python 3** 🐍  
+- **OpenCV** 🎥  
+- **NumPy** 🔢
+
+---
+
+## 🧠 How It Works
+
+1. **Capture background**: A few frames of the background (without the subject) are captured.
+2. **Detect cloak color**: HSV color range is defined for the cloak (usually red).
+3. **Create mask**: Mask is created for pixels that fall within this cloak color range.
+4. **Apply invisibility**: Detected cloak region is replaced by the background pixels, making it "invisible".
